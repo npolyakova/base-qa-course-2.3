@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 public class Task10 {
 
-    //Составить программу, которая в зависимости от порядкового номера дня недели (1, 2, ..., 7)
-    // выводит на экран его название (понедельник, вторник, ..., воскресенье).
+    //РЎРѕСЃС‚Р°РІРёС‚СЊ РїСЂРѕРіСЂР°РјРјСѓ, РєРѕС‚РѕСЂР°СЏ РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РїРѕСЂСЏРґРєРѕРІРѕРіРѕ РЅРѕРјРµСЂР° РґРЅСЏ РЅРµРґРµР»Рё (1, 2, ..., 7) 
+    //РІС‹РІРѕРґРёС‚ РЅР° СЌРєСЂР°РЅ РµРіРѕ РЅР°Р·РІР°РЅРёРµ (РїРѕРЅРµРґРµР»СЊРЅРёРє, РІС‚РѕСЂРЅРёРє, ..., РІРѕСЃРєСЂРµСЃРµРЅСЊРµ).
+
 
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
@@ -11,28 +12,28 @@ public class Task10 {
 
         switch (day) {
             case (1) :
-                System.out.println("Понедельник");
+                System.out.println("РџРѕРЅРµРґРµР»СЊРЅРёРє");
                 break;
             case (2) :
-                System.out.println("Вторник");
+                System.out.println("Р’С‚РѕСЂРЅРёРє");
                 break;
             case (3) :
-                System.out.println("Среда");
+                System.out.println("РЎСЂРµРґР°");
                 break;
             case (4) :
-                System.out.println("Четверг");
+                System.out.println("Р§РµС‚РІРµСЂРі");
                 break;
             case (5) :
-                System.out.println("Пятница");
+                System.out.println("РџСЏС‚РЅРёС†Р°");
                 break;
             case (6) :
-                System.out.println("Суббота");
+                System.out.println("РЎСѓР±Р±РѕС‚Р°");
                 break;
             case (7) :
-                System.out.println("Воскресенье");
+                System.out.println("Р’РѕСЃРєСЂРµСЃРµРЅСЊРµ");
                 break;
             default:
-                System.out.println("Такого дня недели не существует");
+                System.out.println("РўР°РєРѕРіРѕ РґРЅСЏ РЅРµРґРµР»Рё РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚");
                 break;
         }
     }
