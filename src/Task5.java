@@ -2,17 +2,18 @@ import java.util.Scanner;
 
 public class Task5 {
 
-    //Дано трехзначное число. Найти:
-    //- число единиц в нем;
-    //- число десятков в нем;
-    //- сумму его цифр;
-    //- произведение его цифр.
+    //Р”Р°РЅРѕ С‚СЂРµС…Р·РЅР°С‡РЅРѕРµ С‡РёСЃР»Рѕ. РќР°Р№С‚Рё:
+    //- С‡РёСЃР»Рѕ РµРґРёРЅРёС† РІ РЅРµРј;
+    //- С‡РёСЃР»Рѕ РґРµСЃСЏС‚РєРѕРІ РІ РЅРµРј;
+    //- СЃСѓРјРјСѓ РµРіРѕ С†РёС„СЂ;
+    //- РїСЂРѕРёР·РІРµРґРµРЅРёРµ РµРіРѕ С†РёС„СЂ.
+
 
     //234
 
     public static void main(String[] args) {
 
-        System.out.println("Введите число ");
+        System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® ");
         Scanner sc = new Scanner(System.in);
 
         int number = sc.nextInt();
@@ -23,12 +24,12 @@ public class Task5 {
             int decimals = (number / 10) % 10;
             int hundreds = number / 100;
 
-            System.out.println("Единицы - " + units);
-            System.out.println("Десятки - " + decimals);
-            System.out.println("Сумма - " + (units + decimals + hundreds));
-            System.out.println("Произведение - " + (units * decimals * hundreds));
+            System.out.println("Р•РґРёРЅРёС†С‹ - " + units);
+            System.out.println("Р”РµСЃСЏС‚РєРё - " + decimals);
+            System.out.println("РЎРѕС‚РЅРё - " + (units + decimals + hundreds));
+            System.out.println("РџСЂРѕРёР·РІРµРґРµРЅРёРµ - " + (units * decimals * hundreds));
         } else {
-            System.out.println("Введенное число не трехзначное");
+            System.out.println("Р’РІРµРґРёС‚Рµ С‚СЂРµС…Р·РЅР°С‡РЅРѕРµ С‡РёСЃР»Рѕ");
         }
 
     }
