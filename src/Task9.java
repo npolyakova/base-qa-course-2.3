@@ -2,23 +2,23 @@ import java.util.Scanner;
 
 public class Task9 {
 
-    //Известен вес боксера-любителя...
+    //РР·РІРµСЃС‚РµРЅ РІРµСЃ Р±РѕРєСЃРµСЂР°-Р»СЋР±РёС‚РµР»СЏ...
 
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
         Integer weight = scanner.nextInt();
 
         if (weight < 60){
-            System.out.println("Легкий вес");
+            System.out.println("Р›РµРіРєРёР№ РІРµСЃ");
         }
         else if (weight < 75){
-            System.out.println("Средний вес");
+            System.out.println("РЎСЂРµРґРЅРёР№ РІРµСЃ");
         }
         else if (weight < 91){
-            System.out.println("Тяжелый вес");
+            System.out.println("РўСЏР¶РµР»С‹Р№ РІРµСЃ");
         }
         else {
-            System.out.println("Супертяжелый вес");
+            System.out.println("РЎСѓРїРµСЂС‚СЏР¶РµР»С‹Р№ РІРµСЃ");
         }
     }
 }
