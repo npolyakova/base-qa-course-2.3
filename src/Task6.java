@@ -2,15 +2,16 @@ import java.util.Scanner;
 
 public class Task6 {
 
-    //Известны площади круга и квадрата. Определить:
-    //- уместится ли круг в квадрате?
-    //- уместится ли квадрат в круге?
+    //РР·РІРµСЃС‚РЅС‹ РїР»РѕС‰Р°РґРё РєСЂСѓРіР° Рё РєРІР°РґСЂР°С‚Р°. РћРїСЂРµРґРµР»РёС‚СЊ: 
+    //СѓРјРµСЃС‚РёС‚СЃСЏ Р»Рё РєСЂСѓРі РІ РєРІР°РґСЂР°С‚Рµ? 
+    //СѓРјРµСЃС‚РёС‚СЃСЏ Р»Рё РєРІР°РґСЂР°С‚ РІ РєСЂСѓРіРµ?
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите площадь круга");
+        System.out.println("Р’РІРµРґРёС‚Рµ РїР»РѕС‰Р°РґСЊ РєСЂСѓРіР°");
         int circleSq = sc.nextInt(); //pi*r*r
-        System.out.println("Введите площадь квадрата");
+        System.out.println("Р’РІРµРґРёС‚Рµ РїР»РѕС‰Р°РґСЊ РєРІР°РґСЂР°С‚Р°");
         int squareSq = sc.nextInt(); //a*a
         sc.close();
 
@@ -21,7 +22,7 @@ public class Task6 {
         boolean cInQ = d <= a;
         boolean qInC = a <= d;
 
-        System.out.printf("Круг помещается в квадрат = %b \n", cInQ );
-        System.out.printf("Квадрат помещается в круг = %b", qInC);
+        System.out.printf("РљСЂСѓРі РїРѕРјРµС‰Р°РµС‚СЃСЏ РІ РєРІР°РґСЂР°С‚ = %b \n", cInQ );
+        System.out.printf("РљРІР°РґСЂР°С‚ РїРѕРјРµС‰Р°РµС‚СЃСЏ РІ РєСЂСѓРі = %b", qInC);
     }
 }
