@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class Task7 {
 
-    //Дано натуральное число. Определить:
-    //- является ли оно четным;
-    //- оканчивается ли оно цифрой 7
+    //Р”Р°РЅРѕ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ. РћРїСЂРµРґРµР»РёС‚СЊ: 
+    //1. СЏРІР»СЏРµС‚СЃСЏ Р»Рё РѕРЅРѕ С‡РµС‚РЅС‹Рј; 
+    //2. РѕРєР°РЅС‡РёРІР°РµС‚СЃСЏ Р»Рё РѕРЅРѕ С†РёС„СЂРѕР№ 7
+
 
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
@@ -12,13 +13,13 @@ public class Task7 {
         int lastDigit = number % 10;
 
         if ((lastDigit % 2) == 0){
-            System.out.println("Число четное");
+            System.out.println("Р§РёСЃР»Рѕ С‡РµС‚РЅРѕРµ");
         }
         else if (lastDigit == 7){
-            System.out.println("Число оканчивается на 7");
+            System.out.println("Р§РёСЃР»Рѕ РѕРєР°РЅС‡РёРІР°РµС‚СЃСЏ РЅР° 7");
         }
         else {
-            System.out.println("Ни одно условие не выполняется");
+            System.out.println("РќРё РѕРґРЅРѕ СѓСЃР»РѕРІРёРµ РЅРµ РІС‹РїРѕР»РЅРёР»РѕСЃСЊ");
         }
     }
 }
